@@ -24,4 +24,18 @@ public class EmployeeController {
     public List<Employee> findAllEmployees() {
         return mongoRepository.findAll();
     }
+
+    @GetMapping(value = "/{id}")
+    public Employee findByIdEmployees(@PathVariable("id") int id) {
+        return mongoRepository.findById(id).get();
+    }
+
+    @GetMapping(value = "/{id}}")
+    public Employee findAllEmployee(@PathVariable("id") int id) {
+        return mongoRepository.findById(id).get();
+    }
+
+    public void deleteById(@PathVariable("id") int id) {
+        mongoRepository.deleteById(id);
+    }
 }
