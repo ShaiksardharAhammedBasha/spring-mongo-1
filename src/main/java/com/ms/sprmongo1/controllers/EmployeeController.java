@@ -34,4 +34,8 @@ public class EmployeeController {
     public Employee findAllEmployee(@PathVariable("id") int id) {
         return mongoRepository.findById(id).get();
     }
+
+    public void deleteById(@PathVariable("id") int id) {
+        mongoRepository.deleteById(id);
+    }
 }
