@@ -31,7 +31,7 @@ public class EmployeeController {
     }
 
     @GetMapping(value = "/{id}}")
-    public Employee findAllEmployees() {
+    public Employee findAllEmployee(@PathVariable("id") int id) {
         return mongoRepository.findById(id).get();
     }
 }
