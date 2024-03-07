@@ -24,4 +24,9 @@ public class EmployeeController {
     public List<Employee> findAllEmployees() {
         return mongoRepository.findAll();
     }
+
+    @GetMapping(value = "/{id}")
+    public Employee findByIdEmployees(@PathVariable("id") int id) {
+        return mongoRepository.findById(id).get();
+    }
 }
