@@ -42,4 +42,5 @@ public class EmployeeController {
     public void deleteById2(@PathVariable("id") int id) {
         mongoRepository.deleteById(id);
     }
+
 }
