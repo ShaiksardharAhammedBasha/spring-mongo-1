@@ -14,6 +14,14 @@ public class Employee {
     private boolean isEmp;
     private String isCitizen;
 
+    public boolean isEmp() {
+        return isEmp;
+    }
+
+    public void setEmp(boolean emp) {
+        isEmp = emp;
+    }
+
     public String getIsCitizen() {
         return isCitizen;
     }
