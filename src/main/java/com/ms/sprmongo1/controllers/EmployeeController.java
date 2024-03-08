@@ -43,4 +43,8 @@ public class EmployeeController {
         mongoRepository.deleteById(id);
     }
 
+    public void checkUtils() {
+        System.out.println("---------");
+    }
+
 }
