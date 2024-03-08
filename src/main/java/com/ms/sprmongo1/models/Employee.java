@@ -11,6 +11,15 @@ public class Employee {
     private String name;
     private String city;
     private double salary;
+    private String isCitizen;
+
+    public String getIsCitizen() {
+        return isCitizen;
+    }
+
+    public void setIsCitizen(String isCitizen) {
+        this.isCitizen = isCitizen;
+    }
 
     public Employee() {
     }
