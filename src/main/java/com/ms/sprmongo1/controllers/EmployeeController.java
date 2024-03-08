@@ -35,6 +35,11 @@ public class EmployeeController {
         return mongoRepository.findById(id).get();
     }
 
+    @GetMapping(value = "/{id}}")
+    public Employee findAllEmployee2(@PathVariable("id") int id) {
+        return mongoRepository.findById(id).get();
+    }
+
     public void deleteById(@PathVariable("id") int id) {
         mongoRepository.deleteById(id);
     }
