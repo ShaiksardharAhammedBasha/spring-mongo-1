@@ -11,6 +11,7 @@ public class Employee {
     private String name;
     private String city;
     private double salary;
+    private boolean isEmp;
     private String isCitizen;
 
     public String getIsCitizen() {
